@@ -31,6 +31,6 @@ app.use(routes);
   * query Builder: table('users').select('*').
   */
 
-
-
 app.listen(3333);
+
+// app.listen(3333, () => console.log('Executando na porta 3333'))

@@ -7,7 +7,7 @@ const SessionController = require('./controllers/SessionController');
 
 const routes = express.Router();
 
-routes.get('/ongs', OngController.index)
+routes.get('/ongs', OngController.index);
 routes.post('/ongs', OngController.create);
 
 routes.get('/incidents', Incidentcontroller.index)
@@ -16,7 +16,7 @@ routes.delete('/incidents/:id', Incidentcontroller.delete);
 
 routes.get('/profile', ProfileController.index);
 
-routes.post('/session', SessionController.create)
+routes.post('/sessions', SessionController.create);
 
 
 module.exports = routes;
